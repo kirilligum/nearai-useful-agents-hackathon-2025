@@ -5,7 +5,8 @@ Video: [https://youtu.be/lam-6aUwTUE](https://youtu.be/lam-6aUwTUE)
 - test-time-compute agent
   - based on s1 paper
   - 'wait, check your reasoning' x8
-  - solves "how many 'r's are in 'strawberry'?" and GPQA Diamond where o3 fails
+  - solves "how many 'r's are in 'strawberry'?" using llama-3.2-3b
+  - solves GPQA Diamond where o3 fails
 - routing agent: ttc, simple, or web3 (agentKit)
 - benchmarks
 - deployed, running, ready for customization
@@ -41,6 +42,12 @@ This agent is based on cdp-agentkit and interacts with blockchain
 
 [https://app.near.ai/agents/8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/agentkit-kirill/latest](https://app.near.ai/agents/8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/agentkit-kirill/latest)
 
+### ttc-kirill-wait-0
+
+A basic benchmark agent that runs llama-3.3-70b
+
+[https://app.near.ai/agents/8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-0/latest](https://app.near.ai/agents/8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-0/latest)
+
 ## Technical architecture overview
 
 Agents build with near ai framework. all agents use `llama-3.3-70b`. I call the agents in the same threat.
@@ -57,7 +64,7 @@ Benchmarks are done using near ai evaluation kit [https://docs.near.ai/models/be
 
 see [https://app.near.ai/evaluations](https://app.near.ai/evaluations) agent `8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-0/0.0.1` scoring 77% on mmlu100
 
-our thinking model beats o3-mini-high and can solve
+our thinking model beats o3-mini-high and can solve. from GPQA Diamond dataset, question 71
 
 ```
 For multi-Higgs-doublet models, do the Breit-Weigner corrections of the Oblique Parameters provide a better constraint on New Physics than the Original Oblique Parameters?
