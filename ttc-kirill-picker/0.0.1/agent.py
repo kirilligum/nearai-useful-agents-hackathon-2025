@@ -1,3 +1,5 @@
+import json as JSON
+
 from nearai.agents.environment import Environment
 
 
@@ -18,15 +20,17 @@ def run(env: Environment):
             """,
     }
 
+    print(env.list_messages())
+    original_query = JSON.loads(env.list_messages()[0])["content"]
+    print("original_query:", original_query)
     result = env.completion([prompt] + env.list_messages())
     if "1" in result and "2" not in result:
         result = env.run_agent(
-            "travel.primitives.near/trip-organizer/latest",
+            "8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-0/latest",
             query="Plan a two-day trip to Buenos Aires",
         )
     env.add_reply(result)
     print("result:", result)
-    print(env.list_messages())
 
     env.request_user_input()
 
