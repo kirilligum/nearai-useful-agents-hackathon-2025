@@ -35,4 +35,6 @@ def run(env: Environment):
     env.request_user_input()
 
 
-run(env)
+if __name__ == "__main__":
+    from nearai.agents.environment import Environment as Env
+    run(Env())
