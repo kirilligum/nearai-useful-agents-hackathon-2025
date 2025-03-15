@@ -44,8 +44,6 @@ This agent is based on cdp-agentkit and interacts with blockchain
 
 ## Quantative benchmarks and agent performance
 
-### Benchmark suite and evaluation metrics
-
 see [https://app.near.ai/evaluations](https://app.near.ai/evaluations) agent `8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-0/0.0.1` scoring 77% on mmlu100
 
 our thinking model beats o3-mini-high and can solve
@@ -66,19 +64,7 @@ Our
 Thus, the answer is model-dependent: they provide a better constraint when the new states’ widths and proximity to resonances cannot be ignored, but they are not universally superior.
 ```
 
-#### Defined success metrics for each task the agent performs
-
-#### Quantitative performance measurements
-
-#### Reproducible testing environment
-
-#### Comparison against baseline approaches
-
-#### Error rate analysis
-
-#### Task completion time metrics
-
-#### Resource utilization measurements
+our ttx is 3x slower then o3-mini-high with the current setup but the tokens are much cheaper making it a cheaper solution.
 
 ## Setup and installation instructions
 
