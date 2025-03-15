@@ -1,6 +1,6 @@
 {
   "name": "ttc-wait-4-kirill",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "test time compute agent that prompts wait 4 times before answering",
   "category": "agent",
   "tags": [],
