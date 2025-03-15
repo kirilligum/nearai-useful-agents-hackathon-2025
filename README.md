@@ -2,6 +2,14 @@
 
 Video: [https://youtu.be/lam-6aUwTUE](https://youtu.be/lam-6aUwTUE)
 
+- test-time-compute agent
+  - based on s1 paper
+  - 'wait, check your reasoning' x8
+  - solves "how many 'r's are in 'strawberry'?" and GPQA Diamond where o3 fails
+- routing agent: ttc, simple, or web3 (agentKit)
+- benchmarks
+- deployed, running, ready for customization
+
 ## Project name and one-line description
 
 Run extented thinking (test-time-compute) on difficult problems outperforming o3-mini-high, o1, and r1 using just llama-3.3-70b, while running quick thinking on simple problems; and use web3 tools (agentkit).
