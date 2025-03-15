@@ -48,6 +48,11 @@ Our
 
 ## Setup and installation instructions
 
+Follow NEAR AI docs to install the agents mentionned above
+[https://docs.near.ai/agents/quickstart/](https://docs.near.ai/agents/quickstart/)
+
+For CDP integration, use [https://github.com/nearai/nearai_langchain/tree/main/examples/cdp_langchain_chatbot](https://github.com/nearai/nearai_langchain/tree/main/examples/cdp_langchain_chatbot)
+
 ## Future development roadmap
 
 - marketplace for TTC that can be used with any model
