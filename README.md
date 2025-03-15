@@ -11,7 +11,9 @@ Video: [https://youtu.be/lam-6aUwTUE](https://youtu.be/lam-6aUwTUE)
 - benchmarks
 - deployed, running, ready for customization
 
-Competing for NEARAI and Coinbase prizes.
+Track: Competing for NEARAI and Coinbase prizes.
+
+Team: Kirill Igumenshchev x.com/kirill_igum . background: physics, ai, fiat and web3 credit, data privacy, and marketing
 
 ## Project name and one-line description
 
