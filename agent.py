@@ -14,7 +14,7 @@ def run(env: Environment):
     env.add_reply(initial_result)
 
     # --- Step 2: n-step (n=4) chain-of-thought reasoning ---
-    for _ in range(2):
+    for _ in range(6):
         # Simulate user input: "wait, check your reasoning"
         # env.add_message({"role": "user", "content": "wait, check your reasoning"})
         env.add_message("user", "wait, check your reasoning")
