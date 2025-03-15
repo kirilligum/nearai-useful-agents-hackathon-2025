@@ -34,17 +34,41 @@ This agent is based on cdp-agentkit and interacts with blockchain
 
 ## Quantative benchmarks and agent performance
 
-Our
-
 ### Benchmark suite and evaluation metrics
 
-​Defined success metrics for each task the agent performs
-​Quantitative performance measurements
-​Reproducible testing environment
-​Comparison against baseline approaches
-​Error rate analysis
-​Task completion time metrics
-​Resource utilization measurements
+see [https://app.near.ai/evaluations](https://app.near.ai/evaluations) agent `8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-0/0.0.1` scoring 77% on mmlu100
+
+our thinking model beats o3-mini-high and can solve
+
+```
+For multi-Higgs-doublet models, do the Breit-Weigner corrections of the Oblique Parameters provide a better constraint on New Physics than the Original Oblique Parameters?
+```
+
+from GPQA Diamond dataset that o3-mini-high can't solve
+
+our models solves using ttc: [https://app.near.ai/agents/8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-8/latest/run?threadId=thread_129fd4aef4374392ae8522a2](https://app.near.ai/agents/8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-8/latest/run?threadId=thread_129fd4aef4374392ae8522a2)
+
+o3-mini-high answer:
+
+```
+...
+Our
+Thus, the answer is model-dependent: they provide a better constraint when the new states’ widths and proximity to resonances cannot be ignored, but they are not universally superior.
+```
+
+#### Defined success metrics for each task the agent performs
+
+#### Quantitative performance measurements
+
+#### Reproducible testing environment
+
+#### Comparison against baseline approaches
+
+#### Error rate analysis
+
+#### Task completion time metrics
+
+#### Resource utilization measurements
 
 ## Setup and installation instructions
 
