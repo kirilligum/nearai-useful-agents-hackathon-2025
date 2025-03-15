@@ -19,7 +19,7 @@ def run(env: Environment):
     }
 
     result = env.completion([prompt] + env.list_messages())
-    if result == "1":
+    if "1" in result and "2" not in result:
         result = env.run_agent(
             "travel.primitives.near/trip-organizer/latest",
             query="Plan a two-day trip to Buenos Aires",
