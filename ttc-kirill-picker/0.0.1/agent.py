@@ -19,9 +19,14 @@ def run(env: Environment):
     }
 
     result = env.completion([prompt] + env.list_messages())
+    if result == "1":
+        result = env.run_agent(
+            "travel.primitives.near/trip-organizer/latest",
+            query="Plan a two-day trip to Buenos Aires",
+        )
     env.add_reply(result)
-    # result = env.run_agent("travel.primitives.near/trip-organizer/latest", query="Plan a two-day trip to Buenos Aires")
-    # print(result)
+    print("result:", result)
+    print(env.list_messages())
 
     env.request_user_input()
 
