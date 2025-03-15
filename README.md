@@ -42,6 +42,16 @@ This agent is based on cdp-agentkit and interacts with blockchain
 
 ## Technical architecture overview
 
+Agents build with near ai framework. all agents use `llama-3.3-70b`. I call the agents in the same threat.
+
+The router agent decides which agent to call.
+
+The ttc agent gets the first answer then refines it by running `wait, check your reasoning` x8, then asks for the final answer.
+
+The web3 interaction agent uses agentKit.
+
+Benchmarks are done using near ai evaluation kit [https://docs.near.ai/models/benchmarks_and_evaluations/](https://docs.near.ai/models/benchmarks_and_evaluations/)
+
 ## Quantative benchmarks and agent performance
 
 see [https://app.near.ai/evaluations](https://app.near.ai/evaluations) agent `8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-0/0.0.1` scoring 77% on mmlu100
