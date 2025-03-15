@@ -1,6 +1,6 @@
 {
   "name": "ttc-kirill-picker",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "description": "analyzes a question and picks the right test time compute agent",
   "category": "agent",
   "tags": [],

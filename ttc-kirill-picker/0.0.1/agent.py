@@ -1,6 +1,7 @@
 import json as JSON
 
 from nearai.agents.environment import Environment
+from nearai.shared.models import RunMode, ThreadMode
 
 
 def run(env: Environment):
@@ -20,21 +21,36 @@ def run(env: Environment):
             """,
     }
 
-    print(env.list_messages())
-    original_query = env.list_messages()[0]["content"]
-    print("original_query:", original_query)
+    # print(env.list_messages())
+    original_query = env.list_messages()[-1]["content"]
+    # print("original_query:", original_query)
     result = env.completion([prompt] + env.list_messages())
     if "1" in result and "2" not in result:
         result = env.run_agent(
             "8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-0/latest",
-            query="Plan a two-day trip to Buenos Aires",
+            query=original_query,
+            thread_mode=ThreadMode.SAME,
+            run_mode=RunMode.SIMPLE,
         )
-    env.add_reply(result)
+        env.request_agent_input()
+        print("list_messages: ", env.list_messages())
+        env.add_reply(result)
+    elif "2" in result and "1" not in result:
+        result = env.run_agent(
+            "8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-8/latest",
+            query=original_query,
+            thread_mode=ThreadMode.SAME,
+            run_mode=RunMode.SIMPLE,
+        )
+        env.request_agent_input()
+        print("list_messages: ", env.list_messages())
+        env.add_reply(result)
+    else:
+        env.add_reply("I'm sorry, I can't help you with this question.")
     print("result:", result)
+    print(env.list_messages())
 
     env.request_user_input()
 
 
-if __name__ == "__main__":
-    from nearai.agents.environment import Environment as Env
-    run(Env())
+run(env)
