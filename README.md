@@ -10,6 +10,7 @@ Video: [https://youtu.be/lam-6aUwTUE](https://youtu.be/lam-6aUwTUE)
 - routing agent: ttc, simple, or web3 (agentKit)
 - benchmarks
 - deployed, running, ready for customization
+- idea came from vibe-coding restrictions -- i couldn't run llm x6 times while doing push-ups to stay warm
 
 Track: Competing for NEARAI and Coinbase prizes.
 
