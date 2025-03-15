@@ -2,7 +2,7 @@
 
 Video: [https://youtu.be/lam-6aUwTUE](https://youtu.be/lam-6aUwTUE)
 
-- test-time-compute agent
+- test-time-compute (TTC) agent
   - based on s1 paper
   - 'wait, check your reasoning' x8
   - solves "how many 'r's are in 'strawberry'?" using llama-3.2-3b
