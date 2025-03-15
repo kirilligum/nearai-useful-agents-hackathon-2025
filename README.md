@@ -16,6 +16,7 @@ Run extented thinking (test-time-compute) on difficult problems outperforming o3
 
 ## Problem statement and solution approach
 
+The biggest problem in AI and maybe humanity is achieving AGI -- having smarter AI; and we want it accessable and trusted.
 Foundational models haven't improved in the last 2 years (since gpt-4). gpt-4.5 is 10x the parameters (18T) but not much improvement with metrics. The latest improvements (o3,o1,r1,sonnet,s1) were due to additional computational resources during the inference, called test-time-compute (ttc). TTC is highly centralized (o3,o1,sonnet) and r1 has limited performance and demands high resources to be properly decentralize. People and agent should have access to smart competitive models!!
 
 We solve this buy creating and agent that figures out when the extra resources are needed and runs our innovative model based that is using test-time-compute and is beating SOTA.
