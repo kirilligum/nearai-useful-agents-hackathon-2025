@@ -17,6 +17,9 @@ def run(env: Environment):
 
             2: A multi-step reasoning LLM with reflection capabilities. Ideal for precise counting, math, solving puzzles, complex problems, and step-by-step thinking. Also select this agent whenever the user explicitly asks to "think" or "think hard."
 
+            3: An LLM with web3 tools. Use it for non-reasoning questions related to interacting with blockchain. For example, "Transfer a portion of your ETH to a random address" "What is the price of BTC?" "Deploy an NFT that will go super viral!" "Deploy an ERC-20 token with total supply 1 billion". 
+
+
             Remember: Only output the number of the chosen agent.
             """,
     }
@@ -34,7 +37,7 @@ def run(env: Environment):
         )
         env.request_agent_input()
         print("list_messages: ", env.list_messages())
-        env.add_reply(result)
+        # env.add_reply(result)
     elif "2" in result and "1" not in result:
         result = env.run_agent(
             "8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/ttc-kirill-wait-8/latest",
@@ -44,7 +47,17 @@ def run(env: Environment):
         )
         env.request_agent_input()
         print("list_messages: ", env.list_messages())
-        env.add_reply(result)
+        # env.add_reply(result)
+    elif "3" in result and "2" not in result:
+        result = env.run_agent(
+            "8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/agentkit-kirill/latest",
+            query=original_query,
+            thread_mode=ThreadMode.SAME,
+            run_mode=RunMode.SIMPLE,
+        )
+        env.request_agent_input()
+        print("list_messages: ", env.list_messages())
+        # env.add_reply(result)
     else:
         env.add_reply("I'm sorry, I can't help you with this question.")
     print("result:", result)
