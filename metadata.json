@@ -1,7 +1,7 @@
 {
-  "name": "ttc-wait-4-kirill",
+  "name": "ttc-kirill-wait-8",
   "version": "0.0.3",
-  "description": "test time compute agent that prompts wait 4 times before answering",
+  "description": "test time compute agent that prompts wait 8 times before answering",
   "category": "agent",
   "tags": [],
   "details": {
