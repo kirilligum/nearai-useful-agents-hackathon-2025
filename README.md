@@ -11,6 +11,8 @@ Video: [https://youtu.be/lam-6aUwTUE](https://youtu.be/lam-6aUwTUE)
 - benchmarks
 - deployed, running, ready for customization
 
+Competing for NEARAI and Coinbase prizes.
+
 ## Project name and one-line description
 
 Run extented thinking (test-time-compute) on difficult problems outperforming o3-mini-high, o1, and r1 using just llama-3.3-70b, while running quick thinking on simple problems; and use web3 tools (agentkit).
