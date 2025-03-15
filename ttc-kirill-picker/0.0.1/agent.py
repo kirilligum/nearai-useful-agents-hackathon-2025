@@ -21,7 +21,7 @@ def run(env: Environment):
     }
 
     print(env.list_messages())
-    original_query = JSON.loads(env.list_messages()[0])["content"]
+    original_query = env.list_messages()[0]["content"]
     print("original_query:", original_query)
     result = env.completion([prompt] + env.list_messages())
     if "1" in result and "2" not in result:
