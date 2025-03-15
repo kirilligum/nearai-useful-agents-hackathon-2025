@@ -1,5 +1,11 @@
 # Test-Time-Compute Routing Agent
 
+## Project name and one-line description
+
+Run extented thinking (test-time-compute) on difficult problems outperforming o3-mini-high, o1, and r1 using just llama-3.3-70b, while running quick thinking on simple problems; and use web3 tools (agentkit).
+
+## Problem statement and solution approach
+
 ## Agents
 
 ### ttc-kirill-picker
@@ -20,4 +26,22 @@ This agent is based on cdp-agentkit and interacts with blockchain
 
 [https://app.near.ai/agents/8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/agentkit-kirill/latest](https://app.near.ai/agents/8c5f182867abaeb61756c63da5f4fd30cc84ddfc907bb158d45773e1f7c8662d/agentkit-kirill/latest)
 
+## Technical architecture overview
+
 ## Quantative benchmarks and agent performance
+
+Our
+
+### Benchmark suite and evaluation metrics
+
+​Defined success metrics for each task the agent performs
+​Quantitative performance measurements
+​Reproducible testing environment
+​Comparison against baseline approaches
+​Error rate analysis
+​Task completion time metrics
+​Resource utilization measurements
+
+## Setup and installation instructions
+
+## Future development roadmap
